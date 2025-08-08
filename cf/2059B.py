@@ -36,6 +36,6 @@ if the first n-2k+2 ele is not 1, 1 must be the min cost because we can group th
 why n-2k+2? to ensure we still meet the requirement of the k subarray by letting the remaining element be 1 subarray containing 1 element each.
 now 2 must be the min cost, that is when the first n-2k+2 element must be 1. 
 suppose 2 is not the min, say 3 is the min, we can simply partition say the first n-2k+2 ele into say [n-2k] subarray and [2] subarray. 
-notice that [2] subarray = [1,1] and hence, b1=1, b2!=2, thus cost = 2, contradiction that 3 is the min!
+notice that [2] subarray = [1,1] and hence, b1=1, b2!=2, thus cost = 2, contradicting that 3 is the min!
 
 '''

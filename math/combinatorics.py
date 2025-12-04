@@ -117,3 +117,21 @@ def combination_bottom_up_iterative(n, k):
     return [comb for comb in ans if len(comb) == k]
 
 # example: print(combination_bottom_up_iterative(4, 2))
+
+
+# version 5
+def combine(n, k):
+    ans = []
+
+    def backtrack(i, sol):
+        if len(sol) == k:
+            ans.append(sol)
+            return
+        if i == n+1:
+            return
+        backtrack(i+1, sol+[i]) # "+" creates a new list everytime hence can append(sol) instead of append(sol[:])
+        backtrack(i+1, sol)
+
+    backtrack(1, [])
+    return ans
+# example: print(combine(4,2))

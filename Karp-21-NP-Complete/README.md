@@ -164,7 +164,7 @@ Input: Set of integers `S`, integer target `T`.
 
 Output: Yes/No - is there a subset whose `sum = T`?
 
-## 21. Job Sequencing / Scheduling
+## Job Sequencing / Scheduling
 
 Problem: Given a set of `n` jobs `J = {J1, J2, ..., Jn}`, where each job `Ji` has a processing time `p_i`, a deadline `d_i`, and a profit `π_i`, determine a schedule on a single machine that **maximizes total profit** (or achieves a target profit) such that no two jobs overlap and each job is completed by its deadline.
 
